@@ -36,8 +36,8 @@ When you start working on the task, change the status field to "In Progress"; wh
 
 ## Feedback Issues
 
-TODO
+Create a new issue in the specific repository and follow the prompts to operate.
 
 ## Suggest Improvements
 
-TODO
+Same as above.
