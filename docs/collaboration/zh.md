@@ -14,23 +14,23 @@
 | --- | --- |
 | [OpenBuild 官网](https://github.com/orgs/openbuildxyz/projects/9) | [openbuild-frontend](https://github.com/openbuildxyz/openbuild-frontend) |
 
-每个 Project 基本都会包含 Board 和 Roadmap 这两个视图，一般只需关注 Board 视图，根据任务的状态分成了 5 栏：
+每个 Project 基本都会包含以下视图：
 
-1. No Status——尚未被分配；
-2. Todo——已被分配执行人，但还未开始做；
-3. In Progress——正在处理中，在进入此状态之前，任务需被设置起始时间与结束时间；
-4. Dev Done——开发完成并发起 PR 等待审核；
-5. Closed——PR 审核通过并将代码合入代码库。
+- Claimable——可认领任务池，没设置「Assignees」字段的；
+- Board——已进入处理流程的任务，按流程状态分列展示；
+- Schedule——查看所有已进入处理流程的任务排期情况；
+- Mine——查看已分配给自己的任务。
 
-仅状态为「No Status」的任务可以领取，从中选择感兴趣的，然后：
+从「Claimable」视图中选择感兴趣的，然后：
 
 1. 将「Assignees」字段设置为自己；
-2. 更改「Status」字段为「Todo」；
-3. 设置表示任务起止时间的「Start from」与「Finish at」字段。
+2. 设置表示任务起止时间的「Start from」与「Finish at」字段。
 
 按步骤完成以上操作，就代表领取完某个任务了。
 
 **请记得自己设置的起止时间，这相当于一个承诺，要尽量在这期间完成任务，遵守并履行自己的承诺。**
+
+开始做任务时，需将状态字段改为「In Progress」；任务完成后，则把状态字段改为「Done」，并关联上相应的 PR，等待审核。
 
 ## 反馈问题
 
